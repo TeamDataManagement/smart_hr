@@ -1,7 +1,26 @@
 ---
-description:
-globs:
-alwaysApply: false
+description: "Règles globales pour les installations de module"
+globs: 
+alwaysApply: true
 ---
 
+# Structure globale des dossiers
 
+- Règle NextJS (Front-end)
+  - Quand : installation de modules ou modifications liées à **Next.js / React / Tailwind**
+  - Alors :
+    - Toujours revenir à la racine du projet (`cd ..` autant que nécessaire).
+    - Puis entrer dans le dossier **client/**.
+    - Les installations de modules se font avec `npm install` (ou `yarn add`, `pnpm add` si précisé).
+    - Les modifications de code se font uniquement dans les fichiers sous `client/`.
+
+- Règle Python (Back-end)
+  - Quand : installation de modules ou modifications liées à **Python / FastAPI**
+  - Alors :
+    - Toujours revenir à la racine du projet (`cd ..` autant que nécessaire).
+    - Puis entrer dans le dossier **server/**.
+    - Les installations de modules se font avec `pip install` (et ajout dans `requirements.txt` si nécessaire).
+    - Les modifications de code se font uniquement dans les fichiers sous `server/`.
+
+# Remarque
+- Si la technologie n’est pas précisée, analyser le contexte pour déterminer `client/` (front) ou `server/` (back).
