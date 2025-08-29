@@ -46176,3 +46176,5 @@ const dataRH = [
     Status: { statut: "Actif", debauche: { date: "", raison: "" } },
   },
 ];
+
+export default dataRH;
