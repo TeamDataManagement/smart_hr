@@ -1,7 +1,10 @@
 import React from 'react'
+import Tabs from './components/tabs'
 
 export default function page() {
   return (
-    <div>Encodage RH</div>
+    <div>
+        <Tabs />
+    </div>
   )
 }
