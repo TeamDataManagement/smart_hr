@@ -7,7 +7,7 @@ export async function GET() {
   try {
     await connectToDatabase();
     
-    const employees = await Employee.find({}).sort({ createdAt: -1 });
+    const employees = await Employee.find({}).sort({ MATRICULE: 1 });
     
     return NextResponse.json({
       success: true,

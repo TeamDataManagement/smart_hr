@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function AvailableSoon() {
+export default function AvailableSoon({ titre }: { titre: string }) {
   return (
     <div className='flex flex-col gap-2 items-center justify-center h-screen'>
-        <h1 className='text-2xl font-bold'>Coming Soon</h1>
-        <p className='text-gray-500'>This feature is not available yet. Please check back later.</p>
+      <h1 className='text-3xl font-bold'>{titre}</h1>
+      <p className='text-gray-500'>This feature is not available yet. Please check back later.</p>
     </div>
   )
 }

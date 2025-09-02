@@ -1,10 +1,10 @@
 import React from 'react'
-import Tabs from './components/tabs'
+import EncodageRH from './components/EncodageRH'
 
 export default function page() {
   return (
-    <div>
-        <Tabs />
+    <div className='flex flex-col gap-4'>
+      <EncodageRH />
     </div>
   )
 }
