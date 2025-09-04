@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -168,10 +170,11 @@ export default function HomePage() {
                   Accéder →
                 </div>
               </Link>
+            </motion.div>
             ))}
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Section Équipe */}
       <section className="py-16 bg-gray-50">
@@ -273,6 +276,6 @@ export default function HomePage() {
           </div>
         </div>
       </footer>
-    </div>
+    </motion.div>
   )
 }
